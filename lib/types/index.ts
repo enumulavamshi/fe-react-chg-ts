@@ -26,3 +26,23 @@ export interface LenderFields {
 export interface LenderPostResponse {
   decision: 'accepted' | 'declined';
 }
+
+export interface IFieldProps {
+  type: string;
+  details: CustomLenderFields | LenderFields;
+}
+
+export interface IFieldType {
+  1: string;
+  2: string;
+}
+
+export type CustomLenderFields =
+  | 'first_name'
+  | 'last_name'
+  | 'email'
+  | 'date_of_birth'
+  | 'monthly_income'
+  | 'gender'
+  | 'address'
+  | 'contractor';
