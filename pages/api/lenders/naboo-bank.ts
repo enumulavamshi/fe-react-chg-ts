@@ -11,7 +11,7 @@ export const nabooBankData: LenderGetResponseExtended = {
       name: 'gender',
       type: 'select',
       required: true,
-      options: ['opt1', 'opt2', 'opt3'],
+      options: ['Male', 'Female', 'Others'],
     },
     { name: 'contractor', type: 'checkbox', required: false },
   ],
